@@ -51,6 +51,8 @@ public class DisputeController {
                 .respondentPhone(dto.getRespondentPhone())
                 .description(dto.getDescription())
                 .amount(dto.getAmount())
+                .involvedPeopleCount(dto.getInvolvedPeopleCount())
+                .isMassPetition(dto.getIsMassPetition())
                 .build();
 
         Dispute saved = disputeRepository.save(dispute);
